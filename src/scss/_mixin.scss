@@ -1,0 +1,29 @@
+@mixin linkBtn {
+    display: inline-block;
+    text-decoration: none;
+}
+
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin flex-center {
+    @include flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-between {
+    @include flex;
+    justify-content: space-between;
+}
+
+@mixin monster {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin monster-bold {
+    @include monster;
+    font-weight: 700;
+}

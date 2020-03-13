@@ -1,0 +1,64 @@
+
+
+.header{
+  background: url("/dist/img/background-forkApp.png")no-repeat center;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+
+  .heading {
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 60px 0 18px 0;
+    text-align: center;
+  }
+
+  .fork-app-desc {
+    color: $basic-color;
+    text-align: center;
+    padding-bottom: 18px;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .fork-app-version {
+    text-align: center;
+    color: #848e97;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  @media screen and (max-width: 992px) {
+    .heading {
+      font-size: 72px;
+    }
+    .fork-app-desc{
+      font-size: 24px;
+    }
+    .fork-app-version {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .heading {
+      font-size: 52px;
+    }
+    .fork-app-desc{
+      font-size: 20px;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+

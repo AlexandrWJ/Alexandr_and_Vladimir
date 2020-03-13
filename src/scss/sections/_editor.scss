@@ -1,0 +1,121 @@
+.editor-download {
+  position: relative;
+  bottom: 36px;
+  padding: 23px 63px;
+  font-size: 21px;
+  background: #8d81ac;
+  border: 1px solid #8d81ac;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.editor-download:hover {
+  background-color: #fff;
+  color: $basic-color;
+}
+.editor-download-button {
+  display: flex;
+  justify-content: center;
+}
+
+.colored-border {
+  display: inline-block;
+  border-radius: 44px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.editor-period {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #848e97;
+}
+
+
+.title-editor {
+  font-size: 54px;
+  text-align: center;
+  color: #635c73;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 50px 0 32px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.editor-desc {
+  color: #5b5b5b;
+  margin: 48px auto;
+  max-width: 910px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 21px;
+  font-family: 'Lato', sans-serif;
+}
+
+.editor-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.editor-section {
+  border: 1px solid #d5d5d5;
+  margin-right: 15px;
+  border-radius: 5%;
+}
+
+.editor-btn {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+
+  .editor-name {
+    font-weight: bold;
+
+  }
+
+}
+
+.editor-amount {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 992px) {
+  .title-editor {
+    font-size: 42px;
+  }
+}
+
+
+
+@media screen and (max-width: 428px) {
+  .editor-section-last {
+    margin-top: 25px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .editor-download {
+    padding: 12px 37px;
+    bottom: 25px;
+    font-size: 18px;
+  }
+  .title-editor {
+    font-size: 26px;
+  }
+  .editor-desc {
+    font-size: 14px;
+  }
+  .editor-buttons {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}

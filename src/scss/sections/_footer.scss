@@ -1,0 +1,122 @@
+.footer {
+    background-image: url("/dist/img/background-pricing.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 4%;
+    
+    &-list {
+        &-container {
+            @include flex;
+            box-sizing: border-box;
+            padding-bottom: 150px;
+            @media(max-width: $tablet) {
+                padding: 0 10vw;
+                padding-bottom: 200px;
+            }
+            @media(max-width: $mobile) {
+                display: block;
+                padding-bottom: 100px;
+            }
+        }
+        
+        &-item {
+            background-color: rgba(255, 255, 255, 0.15);
+            width: 23%;
+            box-sizing: border-box;
+            margin-right: 2%;
+            @media(max-width: $tablet) {
+                width: 47.5%;
+                margin-right: 5%;
+                margin-bottom: 10%;
+            }
+            @media(max-width: $mobile) {
+                width: 100%;
+                margin-right: 0;
+            }
+            
+            &-title {
+                text-transform: uppercase;
+                @include monster;
+                font-size: 24px;
+                padding: 15px 0;
+                text-align: center;
+                background-color: rgba(255, 255, 255, 0.25);
+                color: #fff;
+            }
+            
+            &-price {
+                @include monster-bold;
+                font-size: 60px;
+                text-align: center;
+                color: #fff;
+                margin: 15px 0;
+            }
+            &-price::before {
+                content: "$";
+                font-weight: 400;
+            }
+            
+            &-term {
+                font-size: 14px;
+                @include monster;
+                text-transform: uppercase;
+                text-align: center;
+                color: #fff;
+            }
+            
+            &-list {
+                margin-top: 41px;
+                margin-bottom: 85px;
+                
+                &-item {
+                    text-transform: capitalize;
+                    text-align: center;
+                    font-size: 16px;
+                    @include monster;
+                    color: #fff;
+                    margin-bottom: 4px;
+                }
+            }
+            
+            &-btn {
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+                @include monster;
+                font-size: 15px;
+                background-color: rgba(255, 255, 255, 0.25);
+                border-radius: 20px;
+                text-align: center;
+                padding: 16px 45px;
+                margin-bottom: 38px;
+                
+                &-container {
+                    width: 100%;
+                    @include flex-center;
+                }
+                
+            }
+            
+            &-btn:hover {
+                background-color: rgba(255, 255, 255, 0.5);
+                color: #000;
+            }
+        }
+        &-item:last-child {
+            margin-right: 0;
+        }
+        &-item:nth-child(2) {
+            @media(max-width: $tablet) {
+                margin-right: 0;
+            }
+        }
+        &-item.special {
+            transform: scale(1.1);
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+.footer-list-item.special .footer-list-item-title {
+    background-color: rgba(0, 0, 0, 0.1);
+}

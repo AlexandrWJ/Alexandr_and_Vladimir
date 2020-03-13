@@ -1,0 +1,119 @@
+.description {
+    background-color: #f4f4f4;
+    width: 100%;
+    &-table {
+        @include flex;
+        flex-direction: column;
+        height: 50vh;
+        padding-top: 10vh;
+        padding-bottom: 65px;
+        
+        @media(max-width: $tablet) {
+            display: block;
+            height: auto;
+            padding: 5vh 0;
+        }
+        &-item {
+            
+            @include flex-between;
+            width: 50%;
+            max-height: 25%;
+            padding-bottom: 34px;
+            box-sizing: border-box;
+            padding-right: 3vw;
+            
+            @media(max-width: $tablet) {
+                width: 100%;
+                height: auto;
+            }
+            @media(max-width: $mobile) {
+                display: block;
+            }
+            
+            &-content {
+                width: 60%;
+                float: right;
+                box-sizing: border-box;
+                @media(max-width: $mobile) {
+                    float: none;
+                    width: 100%;
+                }
+            }
+            &-title {
+                color: #323232;
+                @include monster;
+                font-size: 16px;
+                margin-bottom: 19px;
+                @media(max-width: $mobile) {
+                    text-align: center;
+                    margin-top: 5vh;
+                }
+            }
+            &-text {
+                color: #848e97;
+                @include monster;
+                font-size: 14px;
+                @media(max-width: $mobile) {
+                    text-align: justify;
+                    padding: 3vw;
+                }
+            }
+            &-img {
+                &-container {
+                    width: 25%;
+                    margin-left: 15%;
+                    box-sizing: border-box;
+                    @include flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    @media(max-width: $mobile) {
+                        margin: 0;
+                        @include flex-center;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        &-right {
+            &-panel {
+                height: 100%;
+                width: 50%;
+                box-sizing: border-box;
+                
+                @media(max-width: $tablet) {
+                    width: 100%;
+                    height: 30%;
+                }
+                
+            }
+            &-img {
+                display: inline-block;
+                width: 100%;
+                height: 80%;
+                background: url('/dist/img/description-right-screen.png') no-repeat;
+                background-size: cover;
+                box-sizing: border-box;
+                @media(max-width: $tablet) {
+                    height: 50vh;
+                }
+            }
+            &-title {
+                color: $basic-color;
+                font-size: 275%;
+                @include monster-bold;
+                float: right;
+                margin-bottom: 50px;
+                @media (max-width: $tablet) {display: none}
+                &-mobile {
+                    @extend .description-table-right-title;
+                    display: none;
+                    float: none;
+                    text-align: center;
+                    @media(max-width: $tablet) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

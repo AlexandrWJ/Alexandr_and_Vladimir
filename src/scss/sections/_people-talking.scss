@@ -1,0 +1,85 @@
+
+.people-are-talking {
+  background: url("/dist/img/background-talking.png") no-repeat center fixed;
+  background-size: cover;
+  width: 100%;
+  @include flex-center;
+  padding-top: 8%;
+}
+
+.company-list_box {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 3%;
+}
+
+
+.company-list_text {
+  line-height: 1.5;
+  margin-top: 8%;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 113px;
+  font-style: italic;
+  font-family: 'Lato', sans-serif;
+
+}
+
+.company-list_item {
+  width: 30%;
+  @include flex-center;
+  flex-direction: column;
+}
+
+.company-list_footer-text {
+  font-size: 14px;
+  width: 70%;
+  color: #A291A5;
+  text-align: center;
+  line-height: 1.3;
+  border-bottom: 1px solid #645766;
+  padding-bottom: 0.5%;
+  font-family: 'Lato', sans-serif;
+}
+
+
+@media screen and (max-width: 992px) {
+  .company-list_item {
+    width: 42%;
+  }
+  .section-title {
+    font-size: 43px;
+  }
+  .company-list_footer-text {
+    padding-top: 10%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .company-list_footer-text {
+    padding-top: 0;
+  }
+}
+
+
+@media screen and (max-width: 481px) {
+  .company-list_item {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .section-title {
+    font-size: 38px;
+    padding-top: 61px;
+    line-height: 55px;
+  }
+
+  .company-list_footer-text {
+    display: none;
+  }
+
+}
