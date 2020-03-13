@@ -26,7 +26,7 @@
   .logo-forkio-img {
     width: 43px;
     height: 41px;
-    background: url("/dist/img/logo-navbar-img.png");
+    background: url("./dist/img/logo-navbar-img.png");
   }
 
 
@@ -52,7 +52,7 @@
   }
 
   .logo-forkio:hover .logo-forkio-img {
-    background-image: url("/dist/img/logo-navbar-hover.png");
+    background-image: url("./dist/img/logo-navbar-hover.png");
   }
 
   .nav-menu-link {
